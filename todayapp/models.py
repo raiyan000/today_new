@@ -9,6 +9,7 @@ class Employee(models.Model):
     emp_contact = models.CharField(max_length=20)
     emp_role = models.CharField(max_length=200)
     emp_salary = models.IntegerField()
+    image=models.ImageField(null=True,blank=True)
     
 
     def __str__(self):
